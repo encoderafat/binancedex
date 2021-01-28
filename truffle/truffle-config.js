@@ -1,8 +1,8 @@
 const HDWalletProvider = require('truffle-hdwallet-provider');
 const fs = require('fs');
 const mnemonic = fs.readFileSync(".secret").toString().trim();
+//Mnemonic stored in file .secret 
 
-console.log(mnemonic);
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
