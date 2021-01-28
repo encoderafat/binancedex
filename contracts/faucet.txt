@@ -1,0 +1,8 @@
+   Deploying 'Faucet'
+   ------------------
+   > transaction hash:    0x60c47460f7ae54a747df89d9d8a89d582a637e9933062df824737712c5bd31a7
+   > Blocks: 3            Seconds: 9
+   > contract address:    0x0c5ed53cAa685707A15B377e8c8c7b83A56247F7
+   > block number:        5083616
+   > block timestamp:     1609718633
+   > account:             0x2EB8291d3a6b72cf55B000610B6485b68783D330
