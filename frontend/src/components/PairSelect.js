@@ -20,8 +20,8 @@ const PairSelect = ({tradingPairs,setPairID}) => {
     console.log(tradingPairs);
 
     return (
-        <Grid.Row centered>
-            <Dropdown options={options} onChange={setPairID} search selection/>
+        <Grid.Row centered style={{padding: '10px'}}>
+            <Dropdown placeholder='Select Trading Pair. Default RTK/STOK' options={options} onChange={setPairID} fluid search selection/>
         </Grid.Row>
     )
 }

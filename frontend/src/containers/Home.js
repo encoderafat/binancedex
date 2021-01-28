@@ -119,11 +119,7 @@ const Home = () => {
           <BuySell tradingPairs={tradingPairs} tradingPairID={tradingPairID} />
         </Grid.Row>
   
-        <Grid.Row columns={3}>
-        <Grid.Column>
-            <h4>User Orders</h4>
-            <UserOrders account={account} />
-          </Grid.Column>
+        <Grid.Row columns={2}>
           <Grid.Column>
             <h4>BUY ORDERBOOK</h4>
             <BuyOrderBook 
