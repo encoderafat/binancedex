@@ -21,4 +21,13 @@ Create a Token Pair if it doesn't already exist.
 
 ### Matching Engine Algorithm
 
-Orderbooks for buy/sell markets are implemented as two double-linked sorted lists. Match Engine tries to match any new offer with existing offers. If there is no match, the new offer is added to the orderbook.
+Orderbooks for buy/sell markets are implemented as two double-linked sorted lists. Match Engine tries to match any new offer with existing offers. If there is no match, the new offer is added to the orderbook. At any point in time, the liquidity of the exchange is directly proportional to number of existing offers in the buy/sell markets.
+
+Let tSellAmount be the amount taker is selling.
+Let tBuyAmount is the amount taker is buying.
+
+Let mSellAmount be the amount maker is selling.
+Let mBuyAmount is the amount maker is buying.
+
+Check if (tSellAmount/tBuyAmount >= mBuyAmount/mSellAmount) is true.
+
