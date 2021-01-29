@@ -29,5 +29,5 @@ Let `tBuyQuantity` is the amount taker is buying.
 Let `mSellQuantity` be the amount maker is selling.
 Let `mBuyQuantity` is the amount maker is buying.
 
-Check if `(tSellQuantity/tBuyQuantity >= mBuyQuantity/mSellQuantity)` is true. If true, internal function `buy(uint id, uint quantity) ` is called to execute transaction where `quantity` is `min(mSellQuantity,tBuyQuantity).
+Check if `(tSellQuantity/tBuyQuantity >= mBuyQuantity/mSellQuantity)` is true. If true, internal function `buy(uint id, uint quantity) ` is called to execute transaction where `quantity` is `min(mSellQuantity,tBuyQuantity)`
 
