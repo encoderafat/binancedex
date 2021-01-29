@@ -8,7 +8,7 @@ This contract is a simplified version of Maker On-Chain OTC-Market for ERC-20 co
 
 Create Trade Offer : Exchange Token1 (Sell) for Token2 (Buy).
 
-```tradeOffer(address _tokenAddress1, uint _quantity1, address _tokenAddress2, uint _quantity2)```
+```tradeOffer(address _tokenAddress1, uint _quantity1, address _tokenAddress2, uint _quantity2) returns (uint _id)```
 
 Cancel Offer.
 
