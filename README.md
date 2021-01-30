@@ -4,6 +4,10 @@ Contract Address : ```0x6D9Bb61b9035C562Fa90cF01e72fE76602c1329a```
 
 Contract Interactor GUI : https://pedantic-ritchie-b4130f.netlify.app/
 
+Demo Video : https://drive.google.com/file/d/1g3abxlOEMHsm8GC-wo9eehvej2CFBFhr/view?usp=sharing
+
+Demo Slides : https://docs.google.com/presentation/d/147y8tMA4r2vcOITa05uNndS33Ygv_H2vuhUvhYy4KdY/edit?usp=sharing
+
 This contract is a simplified version of Maker On-Chain OTC-Market for ERC-20 compatible tokens available [here.](https://github.com/daifoundation/maker-otc)
 
 ### Matching Engine Function Calls
