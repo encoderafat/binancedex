@@ -8,7 +8,7 @@ Demo Video : https://drive.google.com/file/d/1g3abxlOEMHsm8GC-wo9eehvej2CFBFhr/v
 
 Demo Slides : https://docs.google.com/presentation/d/147y8tMA4r2vcOITa05uNndS33Ygv_H2vuhUvhYy4KdY/edit?usp=sharing
 
-This contract is a simplified version of Maker On-Chain OTC-Market for ERC-20 compatible tokens available [here.](https://github.com/daifoundation/maker-otc)
+This contract is a simplified and heavily modified version of Maker On-Chain OTC-Market for ERC-20 compatible tokens available [here.](https://github.com/daifoundation/maker-otc)
 
 ### Matching Engine Function Calls
 
