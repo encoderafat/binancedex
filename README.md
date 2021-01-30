@@ -49,6 +49,7 @@ ChainID: 97
 
 Symbol: BNB
 
-Block Explorer URL: https://testnet.bscscan.com```
+Block Explorer URL: https://testnet.bscscan.com
+```
 
 3. Get some test BNB from [the faucet.](https://testnet.binance.org/faucet-smart)
