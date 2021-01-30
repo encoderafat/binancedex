@@ -42,9 +42,9 @@ const BuyOrderBook = ({firstToken,firstAddress,secondToken,secondAddress}) => {
                 let sell = new BigNumber(offers[1].toString());
                 let buy = new BigNumber(offers[3].toString());
 
-                let price = buy.dividedBy(sell).toNumber();
-                let amount = sell.dividedBy(UNIT).toNumber();
-                let total = buy.dividedBy(UNIT).toNumber();
+                let price = sell.dividedBy(buy).toNumber();
+                let amount = buy.dividedBy(UNIT).toNumber();
+                let total = sell.dividedBy(UNIT).toNumber();
 
                 console.log(price,amount,total);
 
@@ -61,9 +61,10 @@ const BuyOrderBook = ({firstToken,firstAddress,secondToken,secondAddress}) => {
 
                     sell = new BigNumber(offers[1].toString());
                     buy = new BigNumber(offers[3].toString());
-                    price = buy.dividedBy(sell).toNumber();
-                    amount = sell.dividedBy(UNIT).toNumber();
-                    total = buy.dividedBy(UNIT).toNumber();
+                    
+                    price = sell.dividedBy(buy).toNumber();
+                    amount = buy.dividedBy(UNIT).toNumber();
+                    total = sell.dividedBy(UNIT).toNumber();
 
                     setOrders(orders => [...orders, {
                         id: offerId,
@@ -86,9 +87,9 @@ const BuyOrderBook = ({firstToken,firstAddress,secondToken,secondAddress}) => {
         <Table celled padded>
             <Table.Header>
                 <Table.Row>
-                    <Table.HeaderCell textAlign='center'>Price</Table.HeaderCell>
-                    <Table.HeaderCell textAlign='center'>Amount</Table.HeaderCell>
-                    <Table.HeaderCell textAlign='center'>Total</Table.HeaderCell>
+                    <Table.HeaderCell textAlign='center'>{`Price (${secondToken})`}</Table.HeaderCell>
+                    <Table.HeaderCell textAlign='center'>{`Amount (${firstToken})`}</Table.HeaderCell>
+                    <Table.HeaderCell textAlign='center'>{`Total (${secondToken})`}</Table.HeaderCell>
                 </Table.Row>                
             </Table.Header>
             <Table.Body>
