@@ -33,3 +33,22 @@ Let `mBuyQuantity` is the amount maker is buying.
 
 Check if `(tSellQuantity/tBuyQuantity >= mBuyQuantity/mSellQuantity)` is true. If true, internal function `buy(uint id, uint quantity) ` is called to execute transaction where `quantity` is `min(mSellQuantity,tBuyQuantity)`. `tSellQuantity` and `tBuyQuantity` are updated next. The loop exits if either of these values become zero, otherwise the next iteration is done.
 
+### Contract Interactor GUI Requirements
+
+[Link to the App.](https://pedantic-ritchie-b4130f.netlify.app/)
+
+1. Metamask [Download Link](https://metamask.io/)
+
+2. Connect Metamask To Binance Smart Chain Testnet
+
+```Network Name: Smart Chain - Testnet
+
+New RPC URL: https://data-seed-prebsc-1-s1.binance.org:8545/
+
+ChainID: 97
+
+Symbol: BNB
+
+Block Explorer URL: https://testnet.bscscan.com```
+
+3. Get some test BNB from [the faucet.](https://testnet.binance.org/faucet-smart)
