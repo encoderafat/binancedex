@@ -44,7 +44,9 @@ const BuySell = ({tradingPairs,tradingPairID}) => {
             return;
         }
 
-        let allowance = buyAmount*UNIT;
+        console.log(buyTotal);
+
+        let allowance = buyTotal*UNIT;
         let tokenAddress = secondAddress;
         console.log(allowance);
         console.log(tokenAddress);
@@ -77,8 +79,8 @@ const BuySell = ({tradingPairs,tradingPairID}) => {
         const dexContract = new ethers.Contract(exchangeAddress, exchange.abi, provider);
         const dexSigned = dexContract.connect(signer);
 
-        let amount1 = buyAmount * UNIT;
-        let amount2 = buyTotal * UNIT;
+        let amount1 = buyTotal * UNIT;
+        let amount2 = buyAmount * UNIT;
 
         let txTrade = await dexSigned.tradeOffer(secondAddress,amount1.toString(),firstAddress,amount2.toString());
 
@@ -107,7 +109,7 @@ const BuySell = ({tradingPairs,tradingPairID}) => {
             return;
         }
 
-        let allowance = sellTotal*UNIT;
+        let allowance = sellAmount*UNIT;
         let tokenAddress = firstAddress;
         console.log(allowance);
         console.log(tokenAddress);
@@ -140,8 +142,8 @@ const BuySell = ({tradingPairs,tradingPairID}) => {
         const dexContract = new ethers.Contract(exchangeAddress, exchange.abi, provider);
         const dexSigned = dexContract.connect(signer);
 
-        let amount1 = sellTotal * UNIT;
-        let amount2 = sellAmount * UNIT;
+        let amount1 = sellAmount * UNIT;
+        let amount2 = sellTotal * UNIT;
 
         let txTrade = await dexSigned.tradeOffer(firstAddress,amount1.toString(),secondAddress,amount2.toString());
 
@@ -166,7 +168,7 @@ const BuySell = ({tradingPairs,tradingPairID}) => {
                     <Form.Field>
                         <Input
                          fluid 
-                         label={`Price (${firstToken})`}
+                         label={`Price (${secondToken})`}
                          type='number'
                          step='any'
                          min='0'
@@ -177,7 +179,7 @@ const BuySell = ({tradingPairs,tradingPairID}) => {
                     <Form.Field>
                         <Input
                          fluid 
-                         label={`Amount (${secondToken})`}
+                         label={`Amount (${firstToken})`}
                          type='number'
                          step='any'
                          min='0'
@@ -187,7 +189,7 @@ const BuySell = ({tradingPairs,tradingPairID}) => {
                     </Form.Field>
                     <Form.Field>
                         <Label size='large'>
-                            {`Total (${firstToken})`}
+                            {`Total (${secondToken})`}
                         </Label>
                         <Label size='large' basic>
                             {buyTotal}
@@ -205,7 +207,7 @@ const BuySell = ({tradingPairs,tradingPairID}) => {
                     <Form.Field>
                         <Input
                          fluid 
-                         label={`Price (${firstToken})`}
+                         label={`Price (${secondToken})`}
                          type='number'
                          step='any'
                          min='0'
@@ -216,7 +218,7 @@ const BuySell = ({tradingPairs,tradingPairID}) => {
                     <Form.Field>
                         <Input
                          fluid 
-                         label={`Amount (${secondToken})`}
+                         label={`Amount (${firstToken})`}
                          type='number'
                          step='any'
                          min='0'
@@ -226,7 +228,7 @@ const BuySell = ({tradingPairs,tradingPairID}) => {
                     </Form.Field>
                     <Form.Field>
                     <Label size='large'>
-                    {`Total (${firstToken})`}
+                    {`Total (${secondToken})`}
                     </Label>
                     <Label size='large' basic>
                         {sellTotal}
