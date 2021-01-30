@@ -53,3 +53,5 @@ Block Explorer URL: https://testnet.bscscan.com
 ```
 
 3. Get some test BNB from [the faucet.](https://testnet.binance.org/faucet-smart)
+
+4. Get test Tokens from the faucet (Click Faucet on the menu) and start testing the contract.
