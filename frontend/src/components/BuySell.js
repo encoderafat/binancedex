@@ -166,7 +166,7 @@ const BuySell = ({tradingPairs,tradingPairID}) => {
                     <Form.Field>
                         <Input
                          fluid 
-                         label={`Price (${firstToken}/${secondToken})`}
+                         label={`Price (${firstToken})`}
                          type='number'
                          step='any'
                          min='0'
@@ -205,7 +205,7 @@ const BuySell = ({tradingPairs,tradingPairID}) => {
                     <Form.Field>
                         <Input
                          fluid 
-                         label={`Price (${firstToken}/${secondToken})`}
+                         label={`Price (${firstToken})`}
                          type='number'
                          step='any'
                          min='0'

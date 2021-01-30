@@ -46,19 +46,12 @@ const Home = () => {
             let pairInfo = await contract.getPairInfo(i);
             //console.log(pairInfo);
             await setTradingPairs(tradingPairs => [...tradingPairs,{
-                id: 2*i-1,
+                id: i,
                 tokenAddress1: pairInfo[0].toString(),
                 tokenSymbol1: pairInfo[1].toString(),
                 tokenAddress2: pairInfo[2].toString(),
                 tokenSymbol2: pairInfo[3].toString(),
             }]);
-            await setTradingPairs(tradingPairs => [...tradingPairs,{
-              id: 2*i,
-              tokenAddress1: pairInfo[2].toString(),
-              tokenSymbol1: pairInfo[3].toString(),
-              tokenAddress2: pairInfo[0].toString(),
-              tokenSymbol2: pairInfo[1].toString(),
-          }]);
         }
 
         setLoaded(true);
@@ -121,16 +114,16 @@ const Home = () => {
   
         <Grid.Row columns={2}>
           <Grid.Column>
-            <h4>BUY ORDERBOOK</h4>
-            <BuyOrderBook 
+            <h4>SELL ORDERBOOK</h4>
+            <SellOrderBook 
             firstToken={firstToken}
             secondToken={secondToken}
             firstAddress={firstAddress}
             secondAddress={secondAddress} />
           </Grid.Column>
           <Grid.Column>
-            <h4>SELL ORDERBOOK</h4>
-            <SellOrderBook 
+            <h4>BUY ORDERBOOK</h4>
+            <BuyOrderBook 
             firstToken={firstToken}
             secondToken={secondToken}
             firstAddress={firstAddress}
