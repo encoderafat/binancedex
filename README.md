@@ -2,7 +2,7 @@
 
 Contract Address : ```0x6D9Bb61b9035C562Fa90cF01e72fE76602c1329a```
 
-Contract Interactor GUI : https://pedantic-ritchie-b4130f.netlify.app/
+Contract Interactor UI : https://pedantic-ritchie-b4130f.netlify.app/
 
 Demo Video : https://drive.google.com/file/d/1g3abxlOEMHsm8GC-wo9eehvej2CFBFhr/view?usp=sharing
 
